@@ -9,6 +9,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -17,8 +19,8 @@ import testNG.GenericUtils;
 
 public class TestChromeZalenium extends GenericUtils{
 
-	@BeforeTest
-	public void beforeTest() throws IOException, Exception {
+	@BeforeClass
+	public void setUp() throws IOException, Exception {
 		GenUtils.setUpDocker("Zalenium");
 	}
 	@Test
@@ -50,7 +52,7 @@ public class TestChromeZalenium extends GenericUtils{
 	@Test
 	public void googleSearch2()throws InterruptedException, MalformedURLException{
 		
-		System.out.println("Running Test in Docker container <<Docker Chrome>>");
+		System.out.println("Running Test in Docker container <<Chrome Zalenium>>");
 		long id = Thread.currentThread().getId();
 		System.out.println("googleSearch2 Chrome, the thread count is: " + id);
 
@@ -66,10 +68,15 @@ public class TestChromeZalenium extends GenericUtils{
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		
-		driver.get("https://www.facebook.com/");
+		driver.get("https://www.linkedin.com/");
 		Thread.sleep(20000);
-		driver.findElement(By.xpath("//input[@id='email']")).sendKeys("test@abc.com");
+		driver.findElement(By.xpath("//input[@id='email-or-phone']")).sendKeys("test@abc.com");
 		
-		System.out.println("Search completed(Chrome Zalenium)");
+		System.out.println("Search completed(Chrome2 Zalenium)");
+	}
+	
+	@AfterClass
+	public void tearDown() throws IOException, Exception {
+		GenUtils.downDocker("Zalenium");
 	}
 }

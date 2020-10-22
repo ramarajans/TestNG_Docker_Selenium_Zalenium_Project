@@ -51,7 +51,7 @@ public class GenUtils {
 	 }
 
 	 
-	 public void downDocker(String remoteMode) throws IOException, InterruptedException {
+	 public static void downDocker(String remoteMode) throws IOException, InterruptedException {
 
 			Runtime	runtime=Runtime.getRuntime();
 
