@@ -1,0 +1,30 @@
+Docker Commands:
+//Pull Selenium-hub image using command 
+docker pull selenium/hub
+
+//Pull FireFox Debug image using command
+docker pull selenium/node-firefox-debug
+
+//Pull Chrome Debug image using below command
+docker pull selenium/node-chrome-debug
+
+//Check all the images are downloaded
+docker images
+
+//Running Selenium-hub inside Docker 
+docker run -d -p 4446:4444 --name selenium-hub -P selenium/hub
+
+//Browser Configuration
+localhost:4446/grid/console
+
+//Check Selenium Hub container has started
+docker ps -a
+
+//Linking chrome image to Selenium-hub
+docker run -d -P --link selenium-hub:hub selenium/node-chrome-debug
+
+//Linking FireFox image to Selenium-hub
+docker run -d -P --link selenium-hub:hub selenium/node-firefox-debug
+
+//Verify Selenium Hub and node are running
+docker logs "Selenium-hub ContainerId"
