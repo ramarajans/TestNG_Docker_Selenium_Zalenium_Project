@@ -1,29 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="97791" started-at="2020-10-22T21:40:09 IST" finished-at="2020-10-22T21:41:47 IST">
+  <suite name="Default suite" duration-ms="219118" started-at="2020-10-22T21:50:30 IST" finished-at="2020-10-22T21:54:09 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="97791" started-at="2020-10-22T21:40:09 IST" finished-at="2020-10-22T21:41:47 IST">
-      <class name="com.selenium.docker.zalenium.TestChromeZalenium">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.selenium.docker.zalenium.TestChromeZalenium@5a4041cc]" name="setUp" is-config="true" duration-ms="20023" started-at="2020-10-22T21:40:09 IST" finished-at="2020-10-22T21:40:29 IST">
+    <test name="Default test" duration-ms="219118" started-at="2020-10-22T21:50:30 IST" finished-at="2020-10-22T21:54:09 IST">
+      <class name="com.selenium.docker.TestChrome2">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.selenium.docker.TestChrome2@6dde5c8c]" name="setUp" is-config="true" duration-ms="10043" started-at="2020-10-22T21:50:30 IST" finished-at="2020-10-22T21:50:40 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="googleSearch()[pri:0, instance:com.selenium.docker.zalenium.TestChromeZalenium@5a4041cc]" name="googleSearch" duration-ms="30641" started-at="2020-10-22T21:40:29 IST" finished-at="2020-10-22T21:41:00 IST">
+        <test-method status="PASS" signature="googleSearch()[pri:0, instance:com.selenium.docker.TestChrome2@6dde5c8c]" name="googleSearch" duration-ms="29976" started-at="2020-10-22T21:50:40 IST" finished-at="2020-10-22T21:51:10 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- googleSearch -->
-        <test-method status="PASS" signature="googleSearch2()[pri:0, instance:com.selenium.docker.zalenium.TestChromeZalenium@5a4041cc]" name="googleSearch2" duration-ms="27036" started-at="2020-10-22T21:41:00 IST" finished-at="2020-10-22T21:41:27 IST">
+        <test-method status="PASS" signature="googleSearch2()[pri:0, instance:com.selenium.docker.TestChrome2@6dde5c8c]" name="googleSearch2" duration-ms="27323" started-at="2020-10-22T21:51:10 IST" finished-at="2020-10-22T21:51:38 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- googleSearch2 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.selenium.docker.zalenium.TestChromeZalenium@5a4041cc]" name="tearDown" is-config="true" duration-ms="20046" started-at="2020-10-22T21:41:27 IST" finished-at="2020-10-22T21:41:47 IST">
+        <test-method status="PASS" signature="googleSearch3()[pri:0, instance:com.selenium.docker.TestChrome2@6dde5c8c]" name="googleSearch3" duration-ms="47099" started-at="2020-10-22T21:51:38 IST" finished-at="2020-10-22T21:52:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- googleSearch3 -->
+        <test-method status="PASS" signature="googleSearch4()[pri:0, instance:com.selenium.docker.TestChrome2@6dde5c8c]" name="googleSearch4" duration-ms="84588" started-at="2020-10-22T21:52:25 IST" finished-at="2020-10-22T21:53:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- googleSearch4 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.selenium.docker.TestChrome2@6dde5c8c]" name="tearDown" is-config="true" duration-ms="20042" started-at="2020-10-22T21:53:49 IST" finished-at="2020-10-22T21:54:09 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.selenium.docker.zalenium.TestChromeZalenium -->
+      </class> <!-- com.selenium.docker.TestChrome2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
