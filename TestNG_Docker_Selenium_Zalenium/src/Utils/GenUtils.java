@@ -10,20 +10,13 @@ import org.testng.SkipException;
 
 public class GenUtils {
 	
-	 private void setUpDocker(String remoteMode) throws IOException, Exception {
+	 public static void setUpDocker(String remoteMode) throws IOException, Exception {
 
 		 Runtime runtime=Runtime.getRuntime();
 
 		 if("Selenium".equalsIgnoreCase(remoteMode)) {
 
 			 runtime.exec("cmd /c start dockerUp.bat");
-
-			 //verifyDockerIsUp();  - to be updated later
-
-			 /*
-			  * runtime.exec("cmd /c start scaleChrome.bat"); Thread.sleep(10000);
-			  * runtime.exec("cmd /c start scaleFirefox.bat");
-			  */
 
 			 Thread.sleep(10000);
 			 runtime.exec("taskkill /f /im cmd.exe") ;
@@ -36,7 +29,7 @@ public class GenUtils {
 
 	 }
 
-	 private void verifyDockerIsUp() throws FileNotFoundException, Exception {
+	 public static void verifyDockerIsUp() throws FileNotFoundException, Exception {
 		 Thread.sleep(10000);
 		 boolean flag=false;
 		 String file="output.txt";
