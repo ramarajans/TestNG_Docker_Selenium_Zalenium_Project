@@ -1,5 +1,6 @@
 package com.selenium.docker;
 
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
@@ -8,7 +9,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
+import Utils.GenUtils;
 
 public class TestChrome2 {
 
@@ -32,6 +37,11 @@ public class TestChrome2 {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	}*/
+	
+	@BeforeClass
+	public void setUp() throws IOException, Exception {
+		GenUtils.setUpDocker("Selenium");
+	}
 	
 	@Test
 	public void googleSearch()throws InterruptedException, MalformedURLException{
@@ -148,6 +158,13 @@ public class TestChrome2 {
 		
 		System.out.println("Search completed(Chrome4)");
 	}
+	
+	
+	@AfterClass
+	public void tearDown() throws IOException, Exception {
+		GenUtils.downDocker("Selenium");
+	}
+	
 	
 	/*@AfterTest
 	public void tearDown()throws Exception{
