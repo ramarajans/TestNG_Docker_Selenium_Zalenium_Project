@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!-- Docker Selenium Grid -->
+<suite name="ParallelTestsCheck" parallel="classes" thread-count="3">
+	<test name="ParaTest">
+		<classes>
+			<class name="com.selenium.docker.TestChrome" />
+			<class name="com.selenium.docker.TestFirefox" />
+			<class name="com.selenium.docker.TestChrome2" />
+		</classes>
+	</test>
+</suite>

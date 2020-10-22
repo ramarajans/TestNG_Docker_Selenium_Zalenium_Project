@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!-- Docker Selenium Grid - Zalenium -->
+<suite name="ParallelTestsCheck" parallel="classes" thread-count="10">
+	<test name="ParaTest">
+		<classes>
+			<!-- <class name="com.selenium.docker.zalenium.TestChromeZalenium_2" />
+			<class name="com.selenium.docker.zalenium.TestChromeZalenium_3" />
+			<class name="com.selenium.docker.zalenium.TestChromeZalenium_4" />
+			 --><class name="com.selenium.docker.zalenium.TestChromeZalenium" />
+			<class name="com.selenium.docker.zalenium.TestFirefoxZalenium" />
+		</classes>
+	</test>
+</suite>

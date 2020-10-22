@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ReadTPStatus]" parallel="methods">
+  <test thread-count="5" name="ReadTPStatus(failed)" parallel="methods">
+    <classes>
+      <class name="testNG.TestNG_ReadTestPlanStatus">
+        <methods>
+          <include name="readExcelValues"/>
+          <include name="test2"/>
+          <include name="test4"/>
+          <include name="test3"/>
+          <include name="afterTest"/>
+          <include name="test5"/>
+          <include name="test1"/>
+        </methods>
+      </class> <!-- testNG.TestNG_ReadTestPlanStatus -->
+    </classes>
+  </test> <!-- ReadTPStatus(failed) -->
+</suite> <!-- Failed suite [ReadTPStatus] -->
