@@ -8,8 +8,9 @@
 			<!-- <class name="com.selenium.docker.zalenium.TestChromeZalenium_2" />
 			<class name="com.selenium.docker.zalenium.TestChromeZalenium_3" />
 			<class name="com.selenium.docker.zalenium.TestChromeZalenium_4" />
-			 --><class name="com.selenium.docker.zalenium.TestChromeZalenium" />
 			<class name="com.selenium.docker.zalenium.TestFirefoxZalenium" />
+			 --><class name="com.selenium.docker.zalenium.TestChromeZalenium" />
+			
 		</classes>
 	</test>
 </suite>

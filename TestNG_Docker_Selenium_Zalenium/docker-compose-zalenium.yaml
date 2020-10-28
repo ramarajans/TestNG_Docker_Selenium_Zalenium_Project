@@ -1,31 +1,25 @@
-# To execute this docker-compose yml file use `docker-compose -f <file_name> up`
-# Add the `-d` flag at the end for detached execution
-version: "3"
+version: '2'
+
 services:
-  #--------------#
   zalenium:
-    image: "dosel/zalenium"
+    image: dosel/zalenium:3.9.1a
     container_name: zalenium
-    hostname: zalenium
-    tty: true
     volumes:
-      - /tmp/videos:/home/seluser/videos
+      - ./videos:/home/seluser/videos
       - /var/run/docker.sock:/var/run/docker.sock
-      - /usr/bin/docker:/usr/bin/docker
     ports:
-      - "4444:4444"
+      - 4444:4444
     command: >
-      start --desiredContainers 2
-            --maxDockerSeleniumContainers 8
-            --screenWidth 800 --screenHeight 600
-            --timeZone "Europe/Berlin"
+      start --desiredContainers 0
+            --maxDockerSeleniumContainers 4
+            --screenWidth 1366 --screenHeight 768
+            --timeZone "Europe/Helsinki"
             --videoRecordingEnabled true
             --sauceLabsEnabled false
             --browserStackEnabled false
             --testingBotEnabled false
-            --cbtEnabled false
-            --lambdaTestEnabled false
             --startTunnel false
+            --sendAnonymousUsageInfo false
     environment:
       - HOST_UID
       - HOST_GID
@@ -35,17 +29,3 @@ services:
       - BROWSER_STACK_KEY
       - TESTINGBOT_KEY
       - TESTINGBOT_SECRET
-      - CBT_USERNAME
-      - CBT_AUTHKEY
-      - LT_USERNAME
-      - LT_ACCESS_KEY
-
-  mock:
-    image: elgalu/google_adwords_mock
-    depends_on:
-      - zalenium
-    ports:
-      - 8080:8080
-    tty: true
-    environment:
-      - MOCK_SERVER_PORT=8080
