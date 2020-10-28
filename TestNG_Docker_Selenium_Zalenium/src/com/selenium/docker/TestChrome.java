@@ -1,5 +1,6 @@
 package com.selenium.docker;
 
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
@@ -12,14 +13,19 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import Utils.GenUtils;
+
 public class TestChrome {
 
 	static RemoteWebDriver driver;
 	
+	
 	@BeforeClass
-	public void setup()throws MalformedURLException{
+	public void setup()throws IOException, Exception{
 	
 		System.out.println("Running Test in Docker container <<Chrome>>");
+		
+		GenUtils.setUpDocker("Selenium");
 		
 		DesiredCapabilities cap = new DesiredCapabilities();
 		cap.setBrowserName("chrome");
@@ -28,10 +34,10 @@ public class TestChrome {
 		cap.setVersion("");
 		
 		//Zalenium
-		driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap);
+		//driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), cap);
 		
 		//Reg Docker Selenium
-		//driver = new RemoteWebDriver(new URL("http://10.50.25.39:4545/wd/hub"), cap);
+		driver = new RemoteWebDriver(new URL("http://localhost:4446/wd/hub"), cap);
 		
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
@@ -56,5 +62,7 @@ public class TestChrome {
 			System.out.println("Completed testing in Docker container <<chrome>>");
 			driver.quit();
 		}
+		
+		GenUtils.downDocker("Selenium");
 	}
 }
