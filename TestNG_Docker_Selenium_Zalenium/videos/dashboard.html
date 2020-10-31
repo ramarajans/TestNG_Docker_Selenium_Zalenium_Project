@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="zalando.ico">
+
+    <title>Zalenium - Dashboard</title>
+
+    <!-- Bootstrap core CSS -->
+    <!-- Current Bootstrap version - 4.0.0-beta -->
+    <!-- Taken from https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/dashboard.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Zalenium - Dashboard</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+            <form class="form-inline mt-2 mt-md-0">
+                <button class="btn btn-danger my-2 my-sm-0" type="button" id="cleanupButton"
+                        title="Important: this will remove all video files and logs!">Cleanup</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <nav class="col-sm-3 col-md-3 d-none d-sm-block bg-light sidebar">
+                <div>
+                    <input id="search" type="text" class="form-control input" placeholder="Search" />
+                </div>
+                <ul id="tests" class="nav nav-pills flex-column list-group">
+                    <li class="nav-item" id="testsHeader">
+                        <h6 class="nav-link bg-success text-white text-center font-weight-bold">Tests (19)</h6>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start"
+                            data-video="zalenium_ab688202-243b-4eef-b46f-95110b1e0dc4_chrome_LINUX_20201028164704844.mp4"
+                            data-test-name="ab688202-243b-4eef-b46f-95110b1e0dc4"
+                            data-test-status="Completed"
+                            data-test-badge="primary"
+                            data-browser-platform="chrome 86.0.4240.111, LINUX"
+                            data-proxy-name="Zalenium"
+                            data-date-time="28-Oct 16:47:06"
+                            data-selenium-log="logs/zalenium_ab688202-243b-4eef-b46f-95110b1e0dc4_chrome_LINUX_20201028164704844/selenium-multinode-stderr.log"
+                            data-browser-driver="logs/zalenium_ab688202-243b-4eef-b46f-95110b1e0dc4_chrome_LINUX_20201028164704844/chrome_driver.log"
+                            data-screen-dimension="1366x768"
+                            data-time-zone="Europe/Helsinki"
+                            data-test-build="">
+                            <div class="d-flex w-100 justify-content-between">
+                                <small class="font-weight-bold text-truncate">ab688202-243b-4eef-b46f-95110b1e0dc4</small>
+                                <small class="text-truncate"></small>
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <small>28-Oct 16:47:06</small>
+                                <small>Zalenium</small>
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <small>chrome 86.0.4240.111, LINUX</small>
+                                <span class="badge badge badge-primary">Completed</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start"
+                            data-video="zalenium_Chrome_Test_chrome_LINUX_20201028164530290.mp4"
+                            data-test-name="Chrome Test"
+                            data-test-status="Timeout"
+                            data-test-badge="warning"
+                            data-browser-platform="chrome 86.0.4240.111, LINUX"
+                            data-proxy-name="Zalenium"
+                            data-date-time="28-Oct 16:45:32"
+                            data-selenium-log="logs/zalenium_Chrome_Test_chrome_LINUX_20201028164530290/selenium-multinode-stderr.log"
+                            data-browser-driver="logs/zalenium_Chrome_Test_chrome_LINUX_20201028164530290/chrome_driver.log"
+                            data-screen-dimension="1366x768"
+                            data-time-zone="Europe/Helsinki"
+                            data-test-build="">
+                            <div class="d-flex w-100 justify-content-between">
+                                <small class="font-weight-bold text-truncate">Chrome Test</small>
+                                <small class="text-truncate"></small>
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <small>28-Oct 16:45:32</small>
+                                <small>Zalenium</small>
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <small>chrome 86.0.4240.111, LINUX</small>
+                                <span class="badge badge badge-warning">Timeout</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start"
+                            data-video="zalenium_58c1a9eb-56da-4ae1-bc16-e1b9001a275d_chrome_LINUX_20201028130809125.mp4"
+                            data-test-name="58c1a9eb-56da-4ae1-bc16-e1b9001a275d"
+                            data-test-status="Timeout"
+                            data-test-badge="warning"
+                            data-browser-platform="chrome 86.0.4240.111, LINUX"
+                            data-proxy-name="Zalenium"
+                            data-date-time="28-Oct 13:08:10"
+                            data-selenium-log="logs/zalenium_58c1a9eb-56da-4ae1-bc16-e1b9001a275d_chrome_LINUX_20201028130809125/selenium-multinode-stderr.log"
+                            data-browser-driver="logs/zalenium_58c1a9eb-56da-4ae1-bc16-e1b9001a275d_chrome_LINUX_20201028130809125/chrome_driver.log"
+                            data-screen-dimension="1366x768"
+                            data-time-zone="Europe/Helsinki"
+                            data-test-build="">
+                            <div class="d-flex w-100 justify-content-between">
+                                <small class="font-weight-bold text-truncate">58c1a9eb-56da-4ae1-bc16-e1b9001a275d</small>
+                                <small class="text-truncate"></small>
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <small>28-Oct 13:08:10</small>
+                                <small>Zalenium</small>
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <small>chrome 86.0.4240.111, LINUX</small>
+                                <span class="badge badge badge-warning">Timeout</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start"
+                            data-video="zalenium_b8cd17f6-22f5-4009-994f-7b08c2a1110c_chrome_LINUX_20201028130734923.mp4"
+                            data-test-name="b8cd17f6-22f5-4009-994f-7b08c2a1110c"
+                            data-test-status="Timeout"
+                            data-test-badge="warning"
+                            data-browser-platform="chrome 86.0.4240.111, LINUX"
+                            data-proxy-name="Zalenium"
+                            data-date-time="28-Oct 13:07:36"
+                            data-selenium-log="logs/zalenium_b8cd17f6-22f5-4009-994f-7b08c2a1110c_chrome_LINUX_20201028130734923/selenium-multinode-stderr.log"
+                            data-browser-driver="logs/zalenium_b8cd17f6-22f5-4009-994f-7b08c2a1110c_chrome_LINUX_20201028130734923/chrome_driver.log"
+                            data-screen-dimension="1366x768"
+                            data-time-zone="Europe/Helsinki"
+                            data-test-build="">
+                            <div class="d-flex w-100 justify-content-between">
+                                <small class="font-weight-bold text-truncate">b8cd17f6-22f5-4009-994f-7b08c2a1110c</small>
+                                <small class="text-truncate"></small>
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <small>28-Oct 13:07:36</small>
+                                <small>Zalenium</small>
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <small>chrome 86.0.4240.111, LINUX</small>
+                                <span class="badge badge badge-warning">Timeout</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start"
+                            data-video="zalenium_03c64b67-5a16-496c-a824-09b4232d50e3_chrome_LINUX_20201028123536390.mp4"
+                            data-test-name="03c64b67-5a16-496c-a824-09b4232d50e3"
+                            data-test-status="Timeout"
+                            data-test-badge="warning"
+                            data-browser-platform="chrome 86.0.4240.111, LINUX"
+                            data-proxy-name="Zalenium"
+                            data-date-time="28-Oct 12:35:38"
+                            data-selenium-log="logs/zalenium_03c64b67-5a16-496c-a824-09b4232d50e3_chrome_LINUX_20201028123536390/selenium-multinode-stderr.log"
+                            data-browser-driver="logs/zalenium_03c64b67-5a16-496c-a824-09b4232d50e3_chrome_LINUX_20201028123536390/chrome_driver.log"
+                            data-screen-dimension="1366x768"
+                            data-time-zone="Europe/Helsinki"
+                            data-test-build="">
+                            <div class="d-flex w-100 justify-content-between">
+                                <small class="font-weight-bold text-truncate">03c64b67-5a16-496c-a824-09b4232d50e3</small>
+                                <small class="text-truncate"></small>
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <small>28-Oct 12:35:38</small>
+                                <small>Zalenium</small>
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <small>chrome 86.0.4240.111, LINUX</small>
+                                <span class="badge badge badge-warning">Timeout</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start"
+                            data-video="zalenium_098a2e5b-cde1-4475-b652-6df02ebe98b4_chrome_LINUX_20201028123526164.mp4"
+                            data-test-name="098a2e5b-cde1-4475-b652-6df02ebe98b4"
+                            data-test-status="Timeout"
+                            data-test-badge="warning"
+                            data-browser-platform="chrome 86.0.4240.111, LINUX"
+                            data-proxy-name="Zalenium"
+                            data-date-time="28-Oct 12:35:31"
+                            data-selenium-log="logs/zalenium_098a2e5b-cde1-4475-b652-6df02ebe98b4_chrome_LINUX_20201028123526164/selenium-multinode-stderr.log"
+                            data-browser-driver="logs/zalenium_098a2e5b-cde1-4475-b652-6df02ebe98b4_chrome_LINUX_20201028123526164/chrome_driver.log"
+                            data-screen-dimension="1366x768"
+                            data-time-zone="Europe/Helsinki"
+                            data-test-build="">
+                            <div class="d-flex w-100 justify-content-between">
+                                <small class="font-weight-bold text-truncate">098a2e5b-cde1-4475-b652-6df02ebe98b4</small>
+                                <small class="text-truncate"></small>
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <small>28-Oct 12:35:31</small>
+                                <small>Zalenium</small>
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <small>chrome 86.0.4240.111, LINUX</small>
+                                <span class="badge badge badge-warning">Timeout</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start"
+                            data-video="zalenium_b1db5d9c-d7af-43d5-b9fa-db50ec39b930_chrome_LINUX_20201028123344776.mp4"
+                            data-test-name="b1db5d9c-d7af-43d5-b9fa-db50ec39b930"
+                            data-test-status="Timeout"
+                            data-test-badge="warning"
+                            data-browser-platform="chrome 86.0.4240.111, LINUX"
+                            data-proxy-name="Zalenium"
+                            data-date-time="28-Oct 12:33:52"
+                            data-selenium-log="logs/zalenium_b1db5d9c-d7af-43d5-b9fa-db50ec39b930_chrome_LINUX_20201028123344776/selenium-multinode-stderr.log"
+                            data-browser-driver="logs/zalenium_b1db5d9c-d7af-43d5-b9fa-db50ec39b930_chrome_LINUX_20201028123344776/chrome_driver.log"
+                            data-screen-dimension="1366x768"
+                            data-time-zone="Europe/Helsinki"
+                            data-test-build="">
+                            <div class="d-flex w-100 justify-content-between">
+                                <small class="font-weight-bold text-truncate">b1db5d9c-d7af-43d5-b9fa-db50ec39b930</small>
+                                <small class="text-truncate"></small>
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <small>28-Oct 12:33:52</small>
+                                <small>Zalenium</small>
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <small>chrome 86.0.4240.111, LINUX</small>
+                                <span class="badge badge badge-warning">Timeout</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start"
+                            data-video="zalenium_ad7f03dd-5f62-4c4f-bb95-0280efa395e2_chrome_LINUX_20201028123347061.mp4"
+                            data-test-name="ad7f03dd-5f62-4c4f-bb95-0280efa395e2"
+                            data-test-status="Timeout"
+                            data-test-badge="warning"
+                            data-browser-platform="chrome 86.0.4240.111, LINUX"
+                            data-proxy-name="Zalenium"
+                            data-date-time="28-Oct 12:33:51"
+                            data-selenium-log="logs/zalenium_ad7f03dd-5f62-4c4f-bb95-0280efa395e2_chrome_LINUX_20201028123347061/selenium-multinode-stderr.log"
+                            data-browser-driver="logs/zalenium_ad7f03dd-5f62-4c4f-bb95-0280efa395e2_chrome_LINUX_20201028123347061/chrome_driver.log"
+                            data-screen-dimension="1366x768"
+                            data-time-zone="Europe/Helsinki"
+                            data-test-build="">
+                            <div class="d-flex w-100 justify-content-between">
+                                <small class="font-weight-bold text-truncate">ad7f03dd-5f62-4c4f-bb95-0280efa395e2</small>
+                                <small class="text-truncate"></small>
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <small>28-Oct 12:33:51</small>
+                                <small>Zalenium</small>
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <small>chrome 86.0.4240.111, LINUX</small>
+                                <span class="badge badge badge-warning">Timeout</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start"
+                            data-video="zalenium_bfe4ad01-ee67-4d7f-a5bf-93342ebfb252_chrome_LINUX_20201028123029182.mp4"
+                            data-test-name="bfe4ad01-ee67-4d7f-a5bf-93342ebfb252"
+                            data-test-status="Timeout"
+                            data-test-badge="warning"
+                            data-browser-platform="chrome 86.0.4240.111, LINUX"
+                            data-proxy-name="Zalenium"
+                            data-date-time="28-Oct 12:30:33"
+                            data-selenium-log="logs/zalenium_bfe4ad01-ee67-4d7f-a5bf-93342ebfb252_chrome_LINUX_20201028123029182/selenium-multinode-stderr.log"
+                            data-browser-driver="logs/zalenium_bfe4ad01-ee67-4d7f-a5bf-93342ebfb252_chrome_LINUX_20201028123029182/chrome_driver.log"
+                            data-screen-dimension="1366x768"
+                            data-time-zone="Europe/Helsinki"
+                            data-test-build="">
+                            <div class="d-flex w-100 justify-content-between">
+                                <small class="font-weight-bold text-truncate">bfe4ad01-ee67-4d7f-a5bf-93342ebfb252</small>
+                                <small class="text-truncate"></small>
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <small>28-Oct 12:30:33</small>
+                                <small>Zalenium</small>
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <small>chrome 86.0.4240.111, LINUX</small>
+                                <span class="badge badge badge-warning">Timeout</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start"
+                            data-video="zalenium_e8b7dd75-9b0b-4272-b90a-fc1ac3a2a725_chrome_LINUX_20201028123028698.mp4"
+                            data-test-name="e8b7dd75-9b0b-4272-b90a-fc1ac3a2a725"
+                            data-test-status="Timeout"
+                            data-test-badge="warning"
+                            data-browser-platform="chrome 86.0.4240.111, LINUX"
+                            data-proxy-name="Zalenium"
+                            data-date-time="28-Oct 12:30:33"
+                            data-selenium-log="logs/zalenium_e8b7dd75-9b0b-4272-b90a-fc1ac3a2a725_chrome_LINUX_20201028123028698/selenium-multinode-stderr.log"
+                            data-browser-driver="logs/zalenium_e8b7dd75-9b0b-4272-b90a-fc1ac3a2a725_chrome_LINUX_20201028123028698/chrome_driver.log"
+                            data-screen-dimension="1366x768"
+                            data-time-zone="Europe/Helsinki"
+                            data-test-build="">
+                            <div class="d-flex w-100 justify-content-between">
+                                <small class="font-weight-bold text-truncate">e8b7dd75-9b0b-4272-b90a-fc1ac3a2a725</small>
+                                <small class="text-truncate"></small>
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <small>28-Oct 12:30:33</small>
+                                <small>Zalenium</small>
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <small>chrome 86.0.4240.111, LINUX</small>
+                                <span class="badge badge badge-warning">Timeout</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start"
+                            data-video="zalenium_34f7ff48-beb2-49c8-b23e-80b1d461e56e_chrome_LINUX_20201028123018850.mp4"
+                            data-test-name="34f7ff48-beb2-49c8-b23e-80b1d461e56e"
+                            data-test-status="Timeout"
+                            data-test-badge="warning"
+                            data-browser-platform="chrome 86.0.4240.111, LINUX"
+                            data-proxy-name="Zalenium"
+                            data-date-time="28-Oct 12:30:21"
+                            data-selenium-log="logs/zalenium_34f7ff48-beb2-49c8-b23e-80b1d461e56e_chrome_LINUX_20201028123018850/selenium-multinode-stderr.log"
+                            data-browser-driver="logs/zalenium_34f7ff48-beb2-49c8-b23e-80b1d461e56e_chrome_LINUX_20201028123018850/chrome_driver.log"
+                            data-screen-dimension="1366x768"
+                            data-time-zone="Europe/Helsinki"
+                            data-test-build="">
+                            <div class="d-flex w-100 justify-content-between">
+                                <small class="font-weight-bold text-truncate">34f7ff48-beb2-49c8-b23e-80b1d461e56e</small>
+                                <small class="text-truncate"></small>
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <small>28-Oct 12:30:21</small>
+                                <small>Zalenium</small>
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <small>chrome 86.0.4240.111, LINUX</small>
+                                <span class="badge badge badge-warning">Timeout</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start"
+                            data-video="zalenium_ab2ef1b6-d505-4979-a431-2f4d70915996_chrome_LINUX_20201028122947049.mp4"
+                            data-test-name="ab2ef1b6-d505-4979-a431-2f4d70915996"
+                            data-test-status="Timeout"
+                            data-test-badge="warning"
+                            data-browser-platform="chrome 86.0.4240.111, LINUX"
+                            data-proxy-name="Zalenium"
+                            data-date-time="28-Oct 12:29:53"
+                            data-selenium-log="logs/zalenium_ab2ef1b6-d505-4979-a431-2f4d70915996_chrome_LINUX_20201028122947049/selenium-multinode-stderr.log"
+                            data-browser-driver="logs/zalenium_ab2ef1b6-d505-4979-a431-2f4d70915996_chrome_LINUX_20201028122947049/chrome_driver.log"
+                            data-screen-dimension="1366x768"
+                            data-time-zone="Europe/Helsinki"
+                            data-test-build="">
+                            <div class="d-flex w-100 justify-content-between">
+                                <small class="font-weight-bold text-truncate">ab2ef1b6-d505-4979-a431-2f4d70915996</small>
+                                <small class="text-truncate"></small>
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <small>28-Oct 12:29:53</small>
+                                <small>Zalenium</small>
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <small>chrome 86.0.4240.111, LINUX</small>
+                                <span class="badge badge badge-warning">Timeout</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start"
+                            data-video="zalenium_b722fceb-18c0-4287-af02-a705a0d93421_chrome_LINUX_20201028122333703.mp4"
+                            data-test-name="b722fceb-18c0-4287-af02-a705a0d93421"
+                            data-test-status="Timeout"
+                            data-test-badge="warning"
+                            data-browser-platform="chrome 86.0.4240.111, LINUX"
+                            data-proxy-name="Zalenium"
+                            data-date-time="28-Oct 12:23:34"
+                            data-selenium-log="logs/zalenium_b722fceb-18c0-4287-af02-a705a0d93421_chrome_LINUX_20201028122333703/selenium-multinode-stderr.log"
+                            data-browser-driver="logs/zalenium_b722fceb-18c0-4287-af02-a705a0d93421_chrome_LINUX_20201028122333703/chrome_driver.log"
+                            data-screen-dimension="1366x768"
+                            data-time-zone="Europe/Helsinki"
+                            data-test-build="">
+                            <div class="d-flex w-100 justify-content-between">
+                                <small class="font-weight-bold text-truncate">b722fceb-18c0-4287-af02-a705a0d93421</small>
+                                <small class="text-truncate"></small>
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <small>28-Oct 12:23:34</small>
+                                <small>Zalenium</small>
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <small>chrome 86.0.4240.111, LINUX</small>
+                                <span class="badge badge badge-warning">Timeout</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start"
+                            data-video="zalenium_0fe2c45b-0d1a-4c43-b04a-aabbbc252b3c_chrome_LINUX_20201028122252286.mp4"
+                            data-test-name="0fe2c45b-0d1a-4c43-b04a-aabbbc252b3c"
+                            data-test-status="Timeout"
+                            data-test-badge="warning"
+                            data-browser-platform="chrome 86.0.4240.111, LINUX"
+                            data-proxy-name="Zalenium"
+                            data-date-time="28-Oct 12:22:54"
+                            data-selenium-log="logs/zalenium_0fe2c45b-0d1a-4c43-b04a-aabbbc252b3c_chrome_LINUX_20201028122252286/selenium-multinode-stderr.log"
+                            data-browser-driver="logs/zalenium_0fe2c45b-0d1a-4c43-b04a-aabbbc252b3c_chrome_LINUX_20201028122252286/chrome_driver.log"
+                            data-screen-dimension="1366x768"
+                            data-time-zone="Europe/Helsinki"
+                            data-test-build="">
+                            <div class="d-flex w-100 justify-content-between">
+                                <small class="font-weight-bold text-truncate">0fe2c45b-0d1a-4c43-b04a-aabbbc252b3c</small>
+                                <small class="text-truncate"></small>
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <small>28-Oct 12:22:54</small>
+                                <small>Zalenium</small>
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <small>chrome 86.0.4240.111, LINUX</small>
+                                <span class="badge badge badge-warning">Timeout</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start"
+                            data-video="zalenium_f29290f2-c675-4fe2-ab09-3d6e6eb46dec_chrome_LINUX_20201028120354144.mp4"
+                            data-test-name="f29290f2-c675-4fe2-ab09-3d6e6eb46dec"
+                            data-test-status="Timeout"
+                            data-test-badge="warning"
+                            data-browser-platform="chrome 86.0.4240.111, LINUX"
+                            data-proxy-name="Zalenium"
+                            data-date-time="28-Oct 12:03:56"
+                            data-selenium-log="logs/zalenium_f29290f2-c675-4fe2-ab09-3d6e6eb46dec_chrome_LINUX_20201028120354144/selenium-multinode-stderr.log"
+                            data-browser-driver="logs/zalenium_f29290f2-c675-4fe2-ab09-3d6e6eb46dec_chrome_LINUX_20201028120354144/chrome_driver.log"
+                            data-screen-dimension="1366x768"
+                            data-time-zone="Europe/Helsinki"
+                            data-test-build="">
+                            <div class="d-flex w-100 justify-content-between">
+                                <small class="font-weight-bold text-truncate">f29290f2-c675-4fe2-ab09-3d6e6eb46dec</small>
+                                <small class="text-truncate"></small>
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <small>28-Oct 12:03:56</small>
+                                <small>Zalenium</small>
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <small>chrome 86.0.4240.111, LINUX</small>
+                                <span class="badge badge badge-warning">Timeout</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start"
+                            data-video="zalenium_19ba3fa6-3ce5-4132-b88a-943829e0079e_chrome_LINUX_20201028120347615.mp4"
+                            data-test-name="19ba3fa6-3ce5-4132-b88a-943829e0079e"
+                            data-test-status="Timeout"
+                            data-test-badge="warning"
+                            data-browser-platform="chrome 86.0.4240.111, LINUX"
+                            data-proxy-name="Zalenium"
+                            data-date-time="28-Oct 12:03:48"
+                            data-selenium-log="logs/zalenium_19ba3fa6-3ce5-4132-b88a-943829e0079e_chrome_LINUX_20201028120347615/selenium-multinode-stderr.log"
+                            data-browser-driver="logs/zalenium_19ba3fa6-3ce5-4132-b88a-943829e0079e_chrome_LINUX_20201028120347615/chrome_driver.log"
+                            data-screen-dimension="1366x768"
+                            data-time-zone="Europe/Helsinki"
+                            data-test-build="">
+                            <div class="d-flex w-100 justify-content-between">
+                                <small class="font-weight-bold text-truncate">19ba3fa6-3ce5-4132-b88a-943829e0079e</small>
+                                <small class="text-truncate"></small>
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <small>28-Oct 12:03:48</small>
+                                <small>Zalenium</small>
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <small>chrome 86.0.4240.111, LINUX</small>
+                                <span class="badge badge badge-warning">Timeout</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start"
+                            data-video="zalenium_3621943f-8a58-4779-907a-2a0e525d7cd3_chrome_LINUX_20201028120329307.mp4"
+                            data-test-name="3621943f-8a58-4779-907a-2a0e525d7cd3"
+                            data-test-status="Timeout"
+                            data-test-badge="warning"
+                            data-browser-platform="chrome 86.0.4240.111, LINUX"
+                            data-proxy-name="Zalenium"
+                            data-date-time="28-Oct 12:03:31"
+                            data-selenium-log="logs/zalenium_3621943f-8a58-4779-907a-2a0e525d7cd3_chrome_LINUX_20201028120329307/selenium-multinode-stderr.log"
+                            data-browser-driver="logs/zalenium_3621943f-8a58-4779-907a-2a0e525d7cd3_chrome_LINUX_20201028120329307/chrome_driver.log"
+                            data-screen-dimension="1366x768"
+                            data-time-zone="Europe/Helsinki"
+                            data-test-build="">
+                            <div class="d-flex w-100 justify-content-between">
+                                <small class="font-weight-bold text-truncate">3621943f-8a58-4779-907a-2a0e525d7cd3</small>
+                                <small class="text-truncate"></small>
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <small>28-Oct 12:03:31</small>
+                                <small>Zalenium</small>
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <small>chrome 86.0.4240.111, LINUX</small>
+                                <span class="badge badge badge-warning">Timeout</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start"
+                            data-video="zalenium_cd760f20-fb61-4543-b6ad-6d4f72468674_chrome_LINUX_20201028120317107.mkv"
+                            data-test-name="cd760f20-fb61-4543-b6ad-6d4f72468674"
+                            data-test-status="Timeout"
+                            data-test-badge="warning"
+                            data-browser-platform="chrome 86.0.4240.111, LINUX"
+                            data-proxy-name="Zalenium"
+                            data-date-time="28-Oct 12:03:26"
+                            data-selenium-log="logs/zalenium_cd760f20-fb61-4543-b6ad-6d4f72468674_chrome_LINUX_20201028120317107/selenium-multinode-stderr.log"
+                            data-browser-driver="logs/zalenium_cd760f20-fb61-4543-b6ad-6d4f72468674_chrome_LINUX_20201028120317107/chrome_driver.log"
+                            data-screen-dimension="1366x768"
+                            data-time-zone="Europe/Helsinki"
+                            data-test-build="">
+                            <div class="d-flex w-100 justify-content-between">
+                                <small class="font-weight-bold text-truncate">cd760f20-fb61-4543-b6ad-6d4f72468674</small>
+                                <small class="text-truncate"></small>
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <small>28-Oct 12:03:26</small>
+                                <small>Zalenium</small>
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <small>chrome 86.0.4240.111, LINUX</small>
+                                <span class="badge badge badge-warning">Timeout</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start"
+                            data-video="zalenium_86178701-9666-4b96-8d6b-bd310d3708c1_chrome_LINUX_20201028120317107.mkv"
+                            data-test-name="86178701-9666-4b96-8d6b-bd310d3708c1"
+                            data-test-status="Timeout"
+                            data-test-badge="warning"
+                            data-browser-platform="chrome 86.0.4240.111, LINUX"
+                            data-proxy-name="Zalenium"
+                            data-date-time="28-Oct 12:03:25"
+                            data-selenium-log="logs/zalenium_86178701-9666-4b96-8d6b-bd310d3708c1_chrome_LINUX_20201028120317107/selenium-multinode-stderr.log"
+                            data-browser-driver="logs/zalenium_86178701-9666-4b96-8d6b-bd310d3708c1_chrome_LINUX_20201028120317107/chrome_driver.log"
+                            data-screen-dimension="1366x768"
+                            data-time-zone="Europe/Helsinki"
+                            data-test-build="">
+                            <div class="d-flex w-100 justify-content-between">
+                                <small class="font-weight-bold text-truncate">86178701-9666-4b96-8d6b-bd310d3708c1</small>
+                                <small class="text-truncate"></small>
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <small>28-Oct 12:03:25</small>
+                                <small>Zalenium</small>
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <small>chrome 86.0.4240.111, LINUX</small>
+                                <span class="badge badge badge-warning">Timeout</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <main class="col-sm-9 ml-sm-auto col-md-9 pt-2 invisible" role="main" id="main-container">
+                <div class="card border-dark mb-1">
+                    <h6 class="card-header text-truncate" id="test-name">
+                        <span class="badge badge-primary float-right" id="test-badge"></span>
+                    </h6>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3 pr-0">
+                        <div class="card border-dark">
+                            <h6 class="card-header">Date</h6>
+                            <div class="card-body">
+                                <p class="card-text" id="date-time"></p>
+                            </div>
+                            <h6 class="card-header">Browser/Platform</h6>
+                            <div class="card-body">
+                                <p class="card-text" id="browser-platform"></p>
+                            </div>
+                            <h6 class="card-header">Screen Dimension</h6>
+                            <div class="card-body">
+                                <p class="card-text" id="screen-dimension"></p>
+                            </div>
+                            <h6 class="card-header">Time Zone</h6>
+                            <div class="card-body">
+                                <p class="card-text" id="time-zone"></p>
+                            </div>
+                            <h6 class="card-header">Proxy</h6>
+                            <div class="card-body">
+                                <p class="card-text" id="proxy-name"></p>
+                            </div>
+                            <h6 class="card-header">Build</h6>
+                            <div class="card-body">
+                                <p class="card-text" id="build-name"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-9 pl-1">
+                        <div class="card">
+                            <ul class="nav nav-tabs" id="testTabs" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#videoFile" role="tab">Video</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#logs" role="tab">Logs</a>
+                                </li>
+                            </ul>
+
+                            <div class="tab-content" id="videoLogsContent">
+                                <div class="tab-pane fade show active" id="videoFile" role="tabpanel">
+                                    <div align="center" class="embed-responsive embed-responsive-16by9 bg-faded">
+                                        <video id="video" controls autoplay class="embed-responsive-item">
+                                            <source id="video-source" src="" type=video/mp4>
+                                        </video>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="logs" role="tabpanel">
+                                    <div id="accordion" role="tablist" aria-multiselectable="true">
+                                        <div class="card">
+                                            <div class="card-header" role="tab" id="headingOne">
+                                                <h5 class="mb-0">
+                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                        Selenium Log
+                                                    </a>
+                                                </h5>
+                                            </div>
+
+                                            <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+                                                <div class="card-block">
+                                                    <pre id="seleniumLog">
+                                                        Selenium Log not loaded yet...
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" role="tab" id="headingTwo">
+                                                <h5 class="mb-0">
+                                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                        Browser Driver Log
+                                                    </a>
+                                                </h5>
+                                            </div>
+                                            <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                                <div class="card-block">
+                                                    <pre id="browserDriverLog">
+                                                        Browser Driver Log not loaded yet...
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- Taken from https://code.jquery.com/jquery-3.2.1.min.js -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Taken from https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js -->
+    <script src="js/tether.min.js"></script>
+    <!-- Taken from https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Taken from https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(document).on('keyup', '#search', function () {
+            var current_query = $('#search').val().toUpperCase();
+            if (current_query !== "") {
+                $(".list-group li").each(function(){
+                    var current_id = $(this).attr('id');
+                    if (current_id !== "testsHeader") {
+                        $(this).hide();
+                        var current_keyword = $(this).text().toUpperCase();
+                        if (current_keyword.indexOf(current_query) >=0) {
+                            $(this).show();
+                        }
+                    }
+                });
+            } else {
+                $(".list-group li").show();
+            }
+        });
+
+        $("#tests").on("click", ".list-group-item", function() {
+            var $this = $(this);
+            var $video = $this.data("video");
+            var $testName = $this.data("test-name");
+            var $browserPlatform = $this.data("browser-platform");
+            var $proxyName = $this.data("proxy-name");
+            var $dateTime = $this.data("date-time");
+            var $seleniumLogFile = $this.data("selenium-log");
+            var $browserDriverLogFile = $this.data("browser-driver");
+            var $screenDimension = $this.data("screen-dimension");
+            var $timeZone = $this.data("time-zone");
+            var $build = $this.data("test-build");
+            var $testStatus = $this.data("test-status");
+            var $testBadge = $this.data("test-badge");
+
+            $('.active').removeClass("active");
+            $this.toggleClass("active");
+
+            // Pass clicked link element to another function
+            playVideo($video);
+
+            // Set test info to be displayed
+            setTestInformation($testName, $browserPlatform, $proxyName, $dateTime,
+                $screenDimension, $timeZone, $build, $testStatus, $testBadge);
+
+            // Load logs
+            loadLogs($seleniumLogFile, $browserDriverLogFile);
+
+            // Select first tab
+            $('#testTabs').find('a:first').tab('show')
+        });
+
+        function playVideo($video) {
+            var video = document.getElementById("video");
+            var source = document.getElementById("video-source");
+            source.setAttribute("src", $video);
+            source.setAttribute("type", "video/mp4");
+            video.pause();
+            video.load();
+            video.play();
+        }
+
+        function setTestInformation($testName, $browserPlatform, $proxyName, $dateTime,
+                                    $screenDimension, $timeZone, $build, $testStatus,
+                                    $testBadge) {
+            var badgeHtml = '<span class="badge badge-' + $testBadge +
+                ' float-right">' + $testStatus + '</span>';
+            document.getElementById("test-name").innerHTML = $testName + badgeHtml;
+            document.getElementById("browser-platform").textContent = $browserPlatform;
+            document.getElementById("proxy-name").textContent = $proxyName;
+            document.getElementById("date-time").textContent = $dateTime;
+            document.getElementById("screen-dimension").textContent = $screenDimension;
+            document.getElementById("time-zone").textContent = $timeZone;
+            document.getElementById("build-name").textContent = $build;
+            $('#main-container').removeClass("invisible");
+        }
+
+        function loadLogs($seleniumLogFile, $browserDriverLogFile) {
+            $('#collapseOne').removeClass("show");
+            $('#collapseTwo').removeClass("show");
+            $('#seleniumLog').html("Selenium Log not loaded yet...");
+            $('#browserDriverLog').html("Browser Driver Log not loaded yet...");
+
+            if ($seleniumLogFile.length > 0) {
+                $('#seleniumLog').load($seleniumLogFile);
+            }
+            if ($browserDriverLogFile.length > 0) {
+                $('#browserDriverLog').load($browserDriverLogFile);
+            }
+        }
+
+        // This will only work when the page is accessed via a WebServer
+        // Loads new tests in the list as the file gets modified
+        setInterval(function() {
+            var current_query = $('#search').val().toUpperCase();
+            if (current_query === "") {
+                $('#tests').load(document.URL +  ' #tests');
+            }
+        }, 5000);
+
+        $(document).on('click', '#cleanupButton', function () {
+            var url = [location.protocol, '//', location.host, location.pathname].join('');
+            $.post(url + 'cleanup?action=doCleanupAll', '');
+            $('#tests').load(document.URL +  ' #tests');
+            playVideo("");
+            loadLogs("", "");
+            setTestInformation("", "", "", "", "", "", "", "", "");
+        });
+
+    </script>
+</body>
+</html>

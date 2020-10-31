@@ -1,0 +1,21 @@
+WebSocket server settings:
+  - Listen on :50007
+  - Flash security policy server
+  - Web server. Web root: /home/seluser/noVNC
+  - No SSL/TLS support (no cert file)
+  - proxying from :50007 to localhost:60007
+172.19.0.2 - - [28/Oct/2020 12:32:45] 172.19.0.2: Plain non-SSL (ws://) WebSocket connection
+172.19.0.2 - - [28/Oct/2020 12:32:45] 172.19.0.2: Version hybi-13, base64: 'False'
+172.19.0.2 - - [28/Oct/2020 12:32:45] connecting to: localhost:60007
+172.19.0.2 - - [28/Oct/2020 12:34:27] 172.19.0.2: Plain non-SSL (ws://) WebSocket connection
+172.19.0.2 - - [28/Oct/2020 12:34:27] 172.19.0.2: Version hybi-13, base64: 'False'
+172.19.0.2 - - [28/Oct/2020 12:34:27] connecting to: localhost:60007
+172.19.0.2 - - [28/Oct/2020 12:34:35] 172.19.0.2: Plain non-SSL (ws://) WebSocket connection
+172.19.0.2 - - [28/Oct/2020 12:34:35] 172.19.0.2: Version hybi-13, base64: 'False'
+172.19.0.2 - - [28/Oct/2020 12:34:35] connecting to: localhost:60007
+172.19.0.2 - - [28/Oct/2020 12:34:56] 172.19.0.2: Plain non-SSL (ws://) WebSocket connection
+172.19.0.2 - - [28/Oct/2020 12:34:56] 172.19.0.2: Version hybi-13, base64: 'False'
+172.19.0.2 - - [28/Oct/2020 12:34:56] connecting to: localhost:60007
+172.19.0.2 - - [28/Oct/2020 12:35:31] 172.19.0.2: Plain non-SSL (ws://) WebSocket connection
+172.19.0.2 - - [28/Oct/2020 12:35:31] 172.19.0.2: Version hybi-13, base64: 'False'
+172.19.0.2 - - [28/Oct/2020 12:35:31] connecting to: localhost:60007

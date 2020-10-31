@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.selenium.docker.zalenium.TestChromeZalenium">
+      <class name="com.selenium.docker.zalenium.AutoUserCreation">
         <methods>
-          <include name="googleSearch2"/>
+          <include name="setup"/>
           <include name="tearDown"/>
-          <include name="setUp"/>
+          <include name="googleSearch"/>
         </methods>
-      </class> <!-- com.selenium.docker.zalenium.TestChromeZalenium -->
+      </class> <!-- com.selenium.docker.zalenium.AutoUserCreation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

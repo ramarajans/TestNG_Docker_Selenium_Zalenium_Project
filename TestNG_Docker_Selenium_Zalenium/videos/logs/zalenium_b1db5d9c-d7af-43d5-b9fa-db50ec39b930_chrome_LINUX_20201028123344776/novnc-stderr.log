@@ -1,0 +1,9 @@
+WebSocket server settings:
+  - Listen on :50005
+  - Flash security policy server
+  - Web server. Web root: /home/seluser/noVNC
+  - No SSL/TLS support (no cert file)
+  - proxying from :50005 to localhost:60005
+172.19.0.2 - - [28/Oct/2020 12:32:46] 172.19.0.2: Plain non-SSL (ws://) WebSocket connection
+172.19.0.2 - - [28/Oct/2020 12:32:47] 172.19.0.2: Version hybi-13, base64: 'False'
+172.19.0.2 - - [28/Oct/2020 12:32:47] connecting to: localhost:60005

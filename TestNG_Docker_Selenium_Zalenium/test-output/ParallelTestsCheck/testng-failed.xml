@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="10" guice-stage="DEVELOPMENT" name="Failed suite [ParallelTestsCheck]" parallel="classes">
-  <test thread-count="10" name="ParaTest(failed)" parallel="classes">
+<suite thread-count="10" parallel="classes" name="Failed suite [ParallelTestsCheck]" guice-stage="DEVELOPMENT">
+  <test thread-count="10" parallel="classes" name="ParaTest(failed)">
     <classes>
-      <class name="com.selenium.docker.zalenium.TestFirefoxZalenium">
-        <methods>
-          <include name="googleSearch"/>
-        </methods>
-      </class> <!-- com.selenium.docker.zalenium.TestFirefoxZalenium -->
       <class name="com.selenium.docker.zalenium.TestChromeZalenium">
         <methods>
           <include name="googleSearch"/>
+          <include name="googleSearch2" invocation-numbers="0 1 2"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
       </class> <!-- com.selenium.docker.zalenium.TestChromeZalenium -->
     </classes>

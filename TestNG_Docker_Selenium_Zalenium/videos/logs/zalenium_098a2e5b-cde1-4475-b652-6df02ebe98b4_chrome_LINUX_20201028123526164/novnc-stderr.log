@@ -1,0 +1,19 @@
+grep: /var/log/cont/vnc-tryouts-stderr.60006.log: No such file or directory
+WebSocket server settings:
+  - Listen on :50006
+  - Flash security policy server
+  - Web server. Web root: /home/seluser/noVNC
+  - No SSL/TLS support (no cert file)
+  - proxying from :50006 to localhost:60006
+172.19.0.2 - - [28/Oct/2020 12:32:46] 172.19.0.2: Plain non-SSL (ws://) WebSocket connection
+172.19.0.2 - - [28/Oct/2020 12:32:46] 172.19.0.2: Version hybi-13, base64: 'False'
+172.19.0.2 - - [28/Oct/2020 12:32:46] connecting to: localhost:60006
+172.19.0.2 - - [28/Oct/2020 12:34:27] 172.19.0.2: Plain non-SSL (ws://) WebSocket connection
+172.19.0.2 - - [28/Oct/2020 12:34:27] 172.19.0.2: Version hybi-13, base64: 'False'
+172.19.0.2 - - [28/Oct/2020 12:34:27] connecting to: localhost:60006
+172.19.0.2 - - [28/Oct/2020 12:34:35] 172.19.0.2: Plain non-SSL (ws://) WebSocket connection
+172.19.0.2 - - [28/Oct/2020 12:34:35] 172.19.0.2: Version hybi-13, base64: 'False'
+172.19.0.2 - - [28/Oct/2020 12:34:35] connecting to: localhost:60006
+172.19.0.2 - - [28/Oct/2020 12:34:57] 172.19.0.2: Plain non-SSL (ws://) WebSocket connection
+172.19.0.2 - - [28/Oct/2020 12:34:57] 172.19.0.2: Version hybi-13, base64: 'False'
+172.19.0.2 - - [28/Oct/2020 12:34:57] connecting to: localhost:60006

@@ -1,0 +1,51 @@
+2020-10-28 11:55:10,891 INFO Included extra file "/etc/supervisor/conf.d/browsermobproxy.conf" during parsing
+2020-10-28 11:55:10,891 INFO Included extra file "/etc/supervisor/conf.d/novnc.conf" during parsing
+2020-10-28 11:55:10,891 INFO Included extra file "/etc/supervisor/conf.d/selenium-hub.conf" during parsing
+2020-10-28 11:55:10,891 INFO Included extra file "/etc/supervisor/conf.d/selenium-multinode.conf" during parsing
+2020-10-28 11:55:10,891 INFO Included extra file "/etc/supervisor/conf.d/selenium-node-chrome.conf" during parsing
+2020-10-28 11:55:10,891 INFO Included extra file "/etc/supervisor/conf.d/selenium-node-firefox.conf" during parsing
+2020-10-28 11:55:10,891 INFO Included extra file "/etc/supervisor/conf.d/video-rec.conf" during parsing
+2020-10-28 11:55:10,891 INFO Included extra file "/etc/supervisor/conf.d/vnc.conf" during parsing
+2020-10-28 11:55:10,891 INFO Included extra file "/etc/supervisor/conf.d/xmanager.conf" during parsing
+2020-10-28 11:55:10,891 INFO Included extra file "/etc/supervisor/conf.d/xterm.conf" during parsing
+2020-10-28 11:55:10,911 INFO RPC interface 'supervisor' initialized
+2020-10-28 11:55:10,912 INFO RPC interface 'supervisor' initialized
+2020-10-28 11:55:10,912 INFO supervisord started with pid 141
+2020-10-28 11:55:11,917 INFO spawned: 'xmanager' with pid 144
+2020-10-28 11:55:11,922 INFO spawned: 'vnc' with pid 145
+2020-10-28 11:55:11,926 INFO spawned: 'novnc' with pid 146
+2020-10-28 11:55:11,937 INFO spawned: 'selenium-multinode' with pid 149
+2020-10-28 11:55:11,949 INFO spawned: 'xterm' with pid 152
+2020-10-28 11:55:11,959 INFO success: xterm entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2020-10-28 11:55:14,025 INFO success: xmanager entered RUNNING state, process has stayed up for > than 2 seconds (startsecs)
+2020-10-28 11:55:14,026 INFO success: vnc entered RUNNING state, process has stayed up for > than 2 seconds (startsecs)
+2020-10-28 11:55:14,026 INFO success: novnc entered RUNNING state, process has stayed up for > than 2 seconds (startsecs)
+2020-10-28 11:55:15,822 INFO success: selenium-multinode entered RUNNING state, process has stayed up for > than 3 seconds (startsecs)
+2020-10-28 11:55:26,461 INFO spawned: 'video-rec' with pid 520
+2020-10-28 11:55:26,462 INFO success: video-rec entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2020-10-28 12:02:35,789 INFO waiting for video-rec to stop
+2020-10-28 12:02:38,405 INFO waiting for video-rec to stop
+2020-10-28 12:02:40,486 INFO waiting for video-rec to stop
+2020-10-28 12:02:42,603 INFO waiting for video-rec to stop
+2020-10-28 12:02:44,603 INFO waiting for video-rec to stop
+2020-10-28 12:02:46,705 INFO waiting for video-rec to stop
+2020-10-28 12:02:48,672 INFO waiting for video-rec to stop
+2020-10-28 12:02:50,721 INFO waiting for video-rec to stop
+2020-10-28 12:02:52,733 INFO waiting for video-rec to stop
+2020-10-28 12:02:54,754 INFO waiting for video-rec to stop
+2020-10-28 12:02:56,893 INFO waiting for video-rec to stop
+2020-10-28 12:02:59,202 INFO waiting for video-rec to stop
+2020-10-28 12:03:01,449 INFO waiting for video-rec to stop
+2020-10-28 12:03:03,307 INFO waiting for video-rec to stop
+2020-10-28 12:03:05,277 INFO waiting for video-rec to stop
+2020-10-28 12:03:07,339 INFO waiting for video-rec to stop
+2020-10-28 12:03:09,471 INFO waiting for video-rec to stop
+2020-10-28 12:03:11,496 INFO waiting for video-rec to stop
+2020-10-28 12:03:13,544 INFO waiting for video-rec to stop
+2020-10-28 12:03:15,594 INFO waiting for video-rec to stop
+2020-10-28 12:03:17,603 INFO waiting for video-rec to stop
+2020-10-28 12:03:19,602 INFO waiting for video-rec to stop
+2020-10-28 12:03:21,624 INFO waiting for video-rec to stop
+2020-10-28 12:03:23,634 INFO waiting for video-rec to stop
+2020-10-28 12:03:24,343 WARN killing 'video-rec' (520) with SIGKILL
+2020-10-28 12:03:24,756 INFO stopped: video-rec (terminated by SIGKILL)
